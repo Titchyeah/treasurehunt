@@ -189,9 +189,9 @@ function App() {
     Quirky,
     Flat
   ];
-  const [image, setImage] = useState();
-  const [description, setDescription] = useState();
-  const [font, setFont] = useState();
+  const [image, setImage] = useState( images[0]);
+  const [description, setDescription] = useState(descriptions[0]);
+  const [font, setFont] = useState( fonts[0]);
 
   const handleClick = () => {
     const randomClicks = 15; /*Math.floor(Math.random() * 10) + 1;*/ // Random number of clicks between 1 and 10
